@@ -1,0 +1,15 @@
+{
+  "name": "alosof.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alosof/alosof.github.io.git",
+  "author": "alosof <alosof@proton.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "scripts": {
+    "blog:dev": "vuepress dev blog",
+    "blog:build": "vuepress build blog"
+  }
+}
