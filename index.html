@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Tech","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Data Science","children":[{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"NLP","children":[{"type":"heading","depth":3,"payload":{"lines":[6,7]},"content":"Reading","children":[{"type":"list_item","depth":4,"payload":{"lines":[7,8]},"content":"<a href=\"https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/foreword01.html\">🤗 NLP with Transformers</a>"},{"type":"list_item","depth":4,"payload":{"lines":[8,9]},"content":"<a href=\"https://huggingface.co/course/chapter1/1\">🤗 Course</a>"}]},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"Tools","children":[{"type":"heading","depth":4,"payload":{"lines":[12,13]},"content":"Modeling","children":[{"type":"list_item","depth":5,"payload":{"lines":[13,14]},"content":"<a href=\"https://spacy.io/\">SpaCy</a>"},{"type":"list_item","depth":5,"payload":{"lines":[14,15]},"content":"<a href=\"https://huggingface.co/docs/tokenizers/index\">🤗 Tokenizers</a>"},{"type":"list_item","depth":5,"payload":{"lines":[15,16]},"content":"<a href=\"https://huggingface.co/docs/transformers/index\">🤗 Transformers</a>"},{"type":"list_item","depth":5,"payload":{"lines":[16,17]},"content":"<a href=\"https://www.sbert.net/\">SentenceTransformers</a>"},{"type":"list_item","depth":5,"payload":{"lines":[17,18]},"content":"<a href=\"https://maartengr.github.io/BERTopic/index.html\">BERTopic</a>"}]},{"type":"heading","depth":4,"payload":{"lines":[19,20]},"content":"Search","children":[{"type":"list_item","depth":5,"payload":{"lines":[20,21]},"content":"<a href=\"https://www.elastic.co/fr/elasticsearch/\">ElasticSearch</a>"},{"type":"list_item","depth":5,"payload":{"lines":[21,22]},"content":"<a href=\"https://neuml.github.io/txtai/\">txtai</a>"},{"type":"list_item","depth":5,"payload":{"lines":[22,23]},"content":"<a href=\"https://haystack.deepset.ai/overview/intro\">haystack</a>"},{"type":"list_item","depth":5,"payload":{"lines":[23,24]},"content":"<a href=\"https://jina.ai/\">Jina AI</a>"}]},{"type":"heading","depth":4,"payload":{"lines":[25,26]},"content":"Labeling","children":[{"type":"list_item","depth":5,"payload":{"lines":[26,27]},"content":"<a href=\"https://www.rubrix.ml/\">Rubrix</a>"},{"type":"list_item","depth":5,"payload":{"lines":[27,28]},"content":"<a href=\"https://labelstud.io/\">Label Studio</a>"}]}]}]},{"type":"heading","depth":2,"payload":{"lines":[29,30]},"content":"Computer Vision","children":[{"type":"heading","depth":3,"payload":{"lines":[31,32]},"content":"Tools","children":[{"type":"heading","depth":4,"payload":{"lines":[33,34]},"content":"Modeling","children":[{"type":"list_item","depth":5,"payload":{"lines":[34,35]},"content":"<a href=\"https://keras.io/api/applications/\">Keras Applications</a>"}]}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[36,37]},"content":"Data Engineering","children":[{"type":"list_item","depth":2,"payload":{"lines":[37,38]},"content":"<a href=\"https://www.tensorflow.org/guide/data\">tf.data</a>"},{"type":"list_item","depth":2,"payload":{"lines":[38,39]},"content":"<a href=\"https://huggingface.co/docs/datasets/index\">🤗 Datasets</a>"},{"type":"list_item","depth":2,"payload":{"lines":[39,40]},"content":"<a href=\"https://docs.ray.io/en/latest/data/getting-started.html\">Ray</a>"},{"type":"list_item","depth":2,"payload":{"lines":[40,41]},"content":"<a href=\"https://docs.getdbt.com/\">dbt</a>"}]},{"type":"heading","depth":1,"payload":{"lines":[42,43]},"content":"OPS","children":[{"type":"heading","depth":2,"payload":{"lines":[44,45]},"content":"Tools","children":[{"type":"heading","depth":3,"payload":{"lines":[46,47]},"content":"Continuous Integration","children":[{"type":"list_item","depth":4,"payload":{"lines":[47,48]},"content":"<a href=\"https://docs.github.com/en/actions\">GitHub Actions</a>"},{"type":"list_item","depth":4,"payload":{"lines":[48,49]},"content":"<a href=\"https://docs.gitlab.com/ee/ci/\">GitLab CI</a>"},{"type":"list_item","depth":4,"payload":{"lines":[49,50]},"content":"<a href=\"https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops\">Azure Pipelines</a>"}]},{"type":"heading","depth":3,"payload":{"lines":[51,52]},"content":"Containers","children":[{"type":"list_item","depth":4,"payload":{"lines":[52,53]},"content":"<a href=\"https://docs.docker.com/\">Docker</a>"},{"type":"list_item","depth":4,"payload":{"lines":[53,54]},"content":"<a href=\"https://kubernetes.io/docs/home/\">Kubernetes</a>"}]},{"type":"heading","depth":3,"payload":{"lines":[55,56]},"content":"Configuration","children":[{"type":"list_item","depth":4,"payload":{"lines":[56,57]},"content":"<a href=\"https://docs.ansible.com/ansible/latest/index.html\">Ansible</a>"}]},{"type":"heading","depth":3,"payload":{"lines":[58,59]},"content":"Provisioning","children":[{"type":"list_item","depth":4,"payload":{"lines":[59,60]},"content":"<a href=\"https://www.terraform.io/docs\">Terraform</a>"},{"type":"list_item","depth":4,"payload":{"lines":[60,61]},"content":"<a href=\"https://terragrunt.gruntwork.io/docs/\">Terragrunt</a>"}]}]}]}]},{})</script>
+</body>
+</html>

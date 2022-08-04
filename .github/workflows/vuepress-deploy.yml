@@ -1,14 +1,14 @@
-name: Build and Deploy
-on: [push]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_SCRIPT: yarn && yarn blog:build
-          BUILD_DIR: blog/.vuepress/dist/
+# name: Build and Deploy
+# on: [push]
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@main
+#       - name: vuepress-deploy
+#         uses: jenkey2011/vuepress-deploy@master
+#         env:
+#           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#           BUILD_SCRIPT: yarn && yarn blog:build
+#           BUILD_DIR: blog/.vuepress/dist/
